@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 
-/* app.get('/iks/:email', (req, res) => {
+app.get('/iks/:email', (req, res) => {
     const email = req.params.email;
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -177,7 +177,7 @@ app.get('/mtranslation/:email', (req, res) => {
         console.log('Email Sent!');
         res.redirect('http://free.aicte-india.org/translation/mregister.php?register=success');
     })
-}); */
+});
 
 app.get('/internship-register/:email', (req, res) => {
     const email = req.params.email;
