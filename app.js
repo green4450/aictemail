@@ -179,7 +179,7 @@ app.get('/mtranslation/:email', (req, res) => {
     })
 });
 
-app.get('/internship-register/:email', (req, res) => {
+app.get('/internshipregister/:email', (req, res) => {
     const email = req.params.email;
     let transporter = nodemailer.createTransport({
         service: 'gmail',
