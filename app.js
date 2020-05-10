@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.get('/iks/:email', (req, res) => {
+/* app.get('/iks/:email', (req, res) => {
     const email = req.params.email;
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -177,19 +177,19 @@ app.get('/mtranslation/:email', (req, res) => {
         console.log('Email Sent!');
         res.redirect('http://free.aicte-india.org/translation/mregister.php?register=success');
     })
-});
+}); */
 
 app.get('/internship-register/:email', (req, res) => {
     const email = req.params.email;
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'aicteupdate@gmail.com',
-            pass: 'aicte@1234'
+            user: 'akashpandey.geu@gmail.com',
+            pass: 'Akash12345**'
         }
     });
     let mailOption = {
-        from: 'aicteupdate@gmail.com',
+        from: 'akashpandey.geu@gmail.com',
         to: email,
         subject: `Congratulations Account Has Been Successfully Created`,
         text: `Account for ${email} has been successfully Registered.`
@@ -197,7 +197,7 @@ app.get('/internship-register/:email', (req, res) => {
     transporter.sendMail(mailOption, (err, data) => {
         if (err) throw res.send(err);
         console.log('Email Sent!');
-        res.redirect('http://localhost/internship_go/internship/login_type.php?task=Registeredsuccessfully');
+        res.redirect('http://localhost/internship_go/internship/login_type.php?task=RegisteredSuccessfully');
     })
 });
 
