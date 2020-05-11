@@ -184,8 +184,8 @@ app.get('/internship-register/:email', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'newinternshipaicte@gmail.com',
-            pass: 'Akash12345**'
+            user: 'aicteupdate@gmail.com',
+            pass: 'aicte@1234'
         }
     });
     let mailOption = {
